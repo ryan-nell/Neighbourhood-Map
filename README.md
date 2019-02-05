@@ -32,4 +32,3 @@ Once the user successfully launches the application in a browser. The user can c
 - [React](https://reactjs.org/ )
 - [Google Maps API tutorial](https://developers.google.com/maps/documentation/javascript/tutorial)
 - [AJAX fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-- Udacity FEND Nanodegree
