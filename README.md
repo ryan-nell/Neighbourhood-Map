@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MyReads Project
 
-## Available Scripts
+The neighborhood map application is a single page web application that implements google maps API to display different locations using markers.
 
-In the project directory, you can run:
+The purpose of this project is to understand the fundamentals of React.js by as creating and rendering components, using Props to display data and State to update the data. This give us the opportunity to explore
+and experiment with external APIS and using fetch to request the Data.
+This is a project that is part of the Front-End Web Developer Nanodegree by Udacity.
 
-### `npm start`
+# Setup
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Download the repository
+- Open terminal and redirect to the directory
+- install all project dependencies with npm install
+- Open Utils.js and insert API Keys. (NOT INCLUDED FOR SECURITY PURPOSES)
+- Type npm start
+- The application will start in a new browser window.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+# How The Application Works
 
-### `npm test`
+Once the user successfully launches the application in a browser. The user can click on the markers to display information on the location. The User can also filter down the locations using the input field.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Project Dependencies
 
-### `npm run build`
+- Vanilla.js
+- React.js
+- Google Maps API
+- Foursquare API
+- AJAX
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Acknowledgements
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [React](https://reactjs.org/ )
+- [Google Maps API tutorial](https://developers.google.com/maps/documentation/javascript/tutorial)
+- [AJAX fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
