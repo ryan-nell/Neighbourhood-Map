@@ -13,3 +13,14 @@ body,
   width: 100%;
   height: 100%;
 }
+
+.list-place {
+  cursor: pointer;
+  padding-top: 2%;
+  padding-left: 1%;
+}
+
+.list-place:focus,
+.list-place:active {
+  border: 1px solid blue;
+}

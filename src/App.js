@@ -53,6 +53,11 @@ class App extends Component {
           name: place.name,
           animation: google.maps.Animation.DROP
         });
+        marker.addListener('click', () => {
+          if (marker.getAnimation() !== null) { marker.setAnimation(null); }
+				  else { marker.setAnimation(google.maps.Animation.BOUNCE); }
+				  setTimeout(() => { marker.setAnimation(null) }, 1500);
+			  });
 
         // push each marker to an array
         this.markers.push(marker);
@@ -74,6 +79,7 @@ class App extends Component {
     let marker = this.markers.filter(item => item.id === place.id )[0];
     this.infoWindow.setContent(marker.name);
     this.infoWindow.open(this.map, marker);
+    
   }
 
   // function to filter markers and places list according to input
@@ -104,7 +110,7 @@ class App extends Component {
             this.state.filteredPlaces && this.state.filteredPlaces.length > 0 &&
             this.state.filteredPlaces.map((place) => (
               <div key={place.id} className="place-item" onClick={() => {this.listItemClicked(place)}}>
-                {place.name}
+                <li tabIndex="0" className="list-place" aria-label="places-list">{place.name}</li>
               </div>
             ))
           }
