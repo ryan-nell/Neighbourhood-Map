@@ -10,7 +10,7 @@ export function displayGoogleMap() {
     };
     // load the google maps API
     const script = document.createElement("script");
-    const apiKey = '[INSERT_GOOGLE_KEY_HERE]';
+    const apiKey = 'AIzaSyBJuRWeadAvrwCfb7Iw60xwevqwxjyLwHA';
 
     script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`;
     script.async = true;
@@ -21,6 +21,6 @@ export function displayGoogleMap() {
 export function loadPlaces() {
   let city = 'Dublin, Ireland';
   let query = 'Food';
-  let apiUrl = 'https://api.foursquare.com/v2/venues/search?client_id=[INSERT_FOURSQAURE_KEY_HERE]&client_secret=[INSERT_FOURSQAURE_KEY_HERE]&v=20130815%20&limit=20&near=' + city + '&query=' + query + '';
+  let apiUrl = 'https://api.foursquare.com/v2/venues/search?client_id=20NEGFR044A0D21F3H0ZGBAMYP4IGD23WWSDQUUMDHIDDQCN&client_secret=FYXVGRU00ZN2Y52DZQYS0PAZFHYSKPMYE2AWFTNLY2BH300Z&v=20130815%20&limit=20&near=' + city + '&query=' + query + '';
   return fetch(apiUrl).then(response => response.json());
 }
